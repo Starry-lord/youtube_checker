@@ -1,2 +1,5 @@
 # youtube_checker
-check titles and content description of your youtube videos before uploading
+
+Check titles and content description of your youtube videos before uploading.
+
+usage: python3 youtubechecker.py
