@@ -49,15 +49,13 @@ except FileNotFoundError:
             with contextlib.redirect_stdout(f):
                 for row in reader:
                     print(row[0])
-
-    #print('wordlist_clean created successfully')
 finally:
     print("wordlist cleanup check done :3")
 
 # input
 
 inpuT = input('Input your title or description here : ')
-i = inpuT.split(' ')
+i = inpuT.lower().split(' ')
 
 # compare
 
@@ -76,4 +74,4 @@ if flag == 0 :
     print("$$$ Yay, Youtube should pay! $$$")
     print("Such polite! :3")
 else :
-    print("Change your words!")
+    print("Change your words! >:3 ")
