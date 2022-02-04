@@ -2,7 +2,7 @@
 
 ## Description
 
-Run the title or description text of your Youtube video through the list to better anticipate demonetization before uploading.
+Run the title or description text of your Youtube video through the list of bad words to better anticipate demonetization, before uploading.
 
 ### Important notes about the ***Youtube Demonetization Words*** List:
 - Capitalization has no effect on monetization status
