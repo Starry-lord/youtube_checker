@@ -18,7 +18,6 @@ print("""
                                                                                                                    
 """)
 
-# create local list only once
 try:
     f = open('wordlist.csv','r')
     f.close()
@@ -33,22 +32,11 @@ finally:
     print("list available")
 
 print("""
-Notes about the ***Youtube Demonetization Words*** List:
-- Capitalization has no effect on monetization status
-- This list is being updated periodically, and will change over time
-- Some results are outdated, and might be inaccurate
-- These results were tested in titles only. Descriptions and tags are less strict
-- dashes (-) act the same way as spaces in compound words
-
-The original list project is available here:
-https://docs.google.com/spreadsheets/d/1ozg1Cnm6SdtM4M5rATkANAi07xAzYWaKL7HKxyvoHzk/edit#gid=1380702445
-
 Usage: python3 youtubechecker.py
 
-Description: Run the title or description text of your Youtube video through the list to better anticipate demonetization before uploading.
+Description: Run the title or description text of your Youtube video through the list to better anticipate demonetization.
 
 Note: to update the list simply remove the wordlist.csv and wordlist_clean and rerun.
-
 """)
 
 with open("wordlist.csv", "r", newline="") as o :
@@ -58,7 +46,7 @@ with open("wordlist.csv", "r", newline="") as o :
             for row in reader:
                 print(row[0])
 
-print('wordlist_clean processed successfully!')
+print('wordlist_clean created successfully!')
 
 # input
 
@@ -68,7 +56,6 @@ i = inpuT.split(' ')
 # compare
 
 badword_list = open('wordlist_clean').read().splitlines()
-#print(badword_list)
 
 for word in i:
     if (word in badword_list) == True:
